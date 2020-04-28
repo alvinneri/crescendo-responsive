@@ -1,0 +1,443 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 1920px;
+    font-family: 'Lato', sans-serif;
+}
+
+html{
+    padding: 0;
+    margin: 0;
+}
+
+h3{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+header{
+    position: relative;
+    
+}
+
+.hamburger{
+    display: none;
+    
+}
+
+
+
+
+/* Header */
+.container{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: 22px solid rgb(0,18,84);
+    background: rgb(255, 255, 255);
+}
+
+.container-nav{
+    width: 67%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 1em;
+}
+
+.flex-spacebetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo{
+    width: 15%;
+    
+}
+
+.logo img{
+    min-width: 126px;
+}
+
+
+.site-title{
+    width: 30%;
+    border-right: 2px solid gray;
+    font-size: 1.27rem;
+    margin-bottom: 1em;
+    padding:  0 1em;
+    color: rgb(0, 155, 250);
+    font-weight: 700;
+}
+
+.site-title span{
+    font-size: 3.37rem;
+    color: #193989;
+}
+
+.navigation{
+    width: 60.2%;
+   
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    list-style: none; 
+    font-size: 1.21rem;
+}
+
+/* Landing Page */
+
+.landing-page{
+    width: 100%;
+    background: url('./images/mountain2.png');
+    background-size: cover;
+    position: relative;
+}
+
+.container-landing{
+    width: 67%;
+    margin: 0 auto;
+    padding: 8em 0;
+    color: #f7f7f7;
+}
+
+
+.site-title2{
+    display: none;
+
+}
+
+.site-title3{
+    font-size: 3.125rem;
+    
+    font-weight: 700;
+}
+
+.taglines{
+    font-size: 2.25rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+}
+
+.insights{
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    
+}
+
+.container-insights{
+    width: 67%;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+.insight-title{
+    font-size:2.125rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+.insight-subtitle{
+    font-size: .93rem;
+    /* padding: 0; */
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+.cards-title{
+    font-size:2.125rem; ;
+}
+
+.insight-cards{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.cards{
+    padding: 1em;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.card-box-shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cards p{
+    padding-top: .5em;
+    margin: 0;
+}
+
+.cards img{
+    width: 100%;
+   
+}
+
+.card-clip{
+    clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
+}
+
+.cards-border-bottom:nth-child(2){
+    margin: 0 1em;
+    color: rgb(1, 164, 156);
+    border-bottom: 12px solid rgb(1, 164, 156);
+}
+
+.cards-border-bottom:nth-child(1){
+    color: rgb(20, 80, 210);
+    border-bottom: 12px solid rgb(20, 80, 210);
+}
+
+.cards-border-bottom:nth-child(3){
+    color: rgb(0, 155, 250);
+    border-bottom: 12px solid rgb(0, 155, 250);
+}
+
+/* About Us */
+.about-container{
+   
+    background: rgb(20,80,210);
+    position: relative;
+    color: rgb(255, 255, 255)
+}
+
+.fractal{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    background: url('./images/fractal.png');
+    background-size: cover;
+}
+
+.about-contents{
+    width: 67%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 1em;
+}
+
+.about-contents h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.about-contents p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.about-contents button{
+    padding: 1em;
+    background: none;
+    color:rgb(255, 255, 255) ;
+    font-size: 1.123rem;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background: rgb(112,112,112);
+    color: rgb(255, 255, 255);
+    font-size: .875rem;
+}
+
+.footer-container{
+    width: 67%;
+    height: 100%;
+    margin: 0 auto;
+    /* padding-top: 20px; */
+}
+
+.call{
+    
+    float: left;
+}
+
+.socials{
+    
+    float: right;
+}
+
+
+
+@media (max-width: 1136px){
+
+header{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+
+.hamburger{
+   
+    position: fixed;
+    float: right;
+    width: 40px;
+    height: 33px;
+    top: 40px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 99;
+}
+    
+
+.site-container{
+    background: rgb(0, 26, 122);
+    width: 100%;
+    height: 100%;
+  
+}
+    
+.container{
+   
+    border-bottom: none;
+    background-color: rgb(235, 235, 235);
+}
+
+.container-nav{
+    width: 100%;
+}
+    
+.flex-spacebetween{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.logo{
+    width: 100%;
+}
+
+.logo{
+   
+    text-align: center;
+}
+
+.site-title{
+    display: none;
+   
+}
+
+.navigation{
+    display: none;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 2em 0;
+    transform: translateY();
+}
+
+.responsive{
+    display: flex;
+}
+
+
+.nav-links{
+    flex-direction: column;
+    align-items: center;
+    width: 84%;
+    margin: 0 auto;
+    padding: 0;
+    
+
+}
+
+.nav-items{
+    width: 100%;
+    text-align: center;
+    background-color:rgb(235, 235, 235) ;
+    margin: .5em;
+    padding: 1em;
+    font-size: 1.5rem;
+    
+}
+
+/* Landing page */
+.landing-page{
+    background: rgb(26, 156,247);
+}
+
+.container-landing{
+    width: 84%;
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: #f7f7f7;
+}
+
+.site-title2{
+    display: block;
+    width: 84%;
+    margin: 0 auto;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #f7f7f7;
+    padding-top: 2em;
+}
+
+
+.site-title3{
+    font-size: 1.75rem;
+    font-weight: 300;
+
+}
+
+.site-title3 span{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+/* Insights */
+.insights{
+    background: none;
+    color: rgb(255, 255, 255);
+}
+
+.container-insights{
+    width: 84%;
+    margin: 0 auto;
+}
+
+.insight-cards{
+    overflow-x: auto;
+}
+
+.cards{ 
+    flex-shrink: 0;
+}
+
+.about-contents{
+    width: 84%;
+}
+
+
+.events{
+    background-color: rgb(235, 235, 235);
+}
+
+.footer-container{
+    width: 84%;
+}
+
+}
+
+
+
